@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
